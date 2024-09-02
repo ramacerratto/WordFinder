@@ -36,5 +36,6 @@ please include your analysis and evaluation.
 First of all, i started to think in the architecture of the solution, since it is a simple program and there is no requeriments about how it would be used or how the data would be inserted i thought in a Console App. BUT, since the excercise ask to go further the simple resolution of the problem to evaluate other kind of development skills, i decided to create it as an API solution. This could be interpreted as a fault to the KISS pattern but i think is important to show some API design knowledge.
 
 #### Algorithm
-To 
+To resolve the problem itself the first thing i thought was to use ChatGPT, but i wanted before that to think my own solution and then use it in case there is any better solution. My first call was to transform the matrix in a list of strings and then simply use String.Contain, i did some research and saw that it works fine for this amount of characters. 
 
+https://cc.davelozinski.com/c-sharp/fastest-way-to-check-if-a-string-occurs-within-a-string
