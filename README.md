@@ -28,6 +28,10 @@ Due to the size of the word stream, the code should be implemented in a high per
 fashion both in terms of efficient algorithm and utilization of system resources. Where possible,
 please include your analysis and evaluation.
 
+## Setup
+To compile the solution it is only needed to have the .net 8 sdk and a VisualStudio version updated to compile it.
+To execute the solution, the app is published in the App folder. Just execute "dotnet WordFinderApp.dll" 
+
 ## Solution
 
 ### 1. Analysis
@@ -43,3 +47,8 @@ Reference link: https://cc.davelozinski.com/c-sharp/fastest-way-to-check-if-a-st
 
 #### Performance check
 To check the different solutions i added a library for Benchmark in .NET and asked chatGPT to creat a big wordStream file for testing with 1million words. It created one with a lot of repeated words that would work and i created another with python with 2million strings without repeating.
+
+![image](benchmark.png)
+
+After doing the benchmark test i realized that the "Contain" solution is more efficient for my sorprise, so i leaved in that way. 
+Now, when tried the solution with a big non repeated stream of words the program takes a lot of time. I started to seek other solutions but i will return the solution to you before continue the research since more efficient solutions appears to be to complex for this case (an interview challenge).
