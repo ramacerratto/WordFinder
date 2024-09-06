@@ -33,9 +33,13 @@ please include your analysis and evaluation.
 ### 1. Analysis
 
 #### Architecture
-First of all, i started to think in the architecture of the solution, since it is a simple program and there is no requeriments about how it would be used or how the data would be inserted i thought in a Console App. BUT, since the excercise ask to go further the simple resolution of the problem to evaluate other kind of development skills, i decided to create it as an API solution. This could be interpreted as a fault to the KISS pattern but i think is important to show some API design knowledge.
+First of all, i started to think in the architecture of the solution, since it is a simple program and there is no requeriments about how it would be used or how the data would be inserted i thought in a Console App. I almost used an API application to show how i design an API, but when i started to think in that design i understood that it would not be useful for that, it wouldn't respect the KISS principle.
 
 #### Algorithm
-To resolve the problem itself the first thing i thought was to use ChatGPT, but i wanted before that to think my own solution and then use it in case there is any better solution. My first call was to transform the matrix in a list of strings and then simply use String.Contain, i did some research and saw that it works fine for this amount of characters. 
+To resolve the problem itself the first thing i thought was to use ChatGPT, but i wanted before that to think my own solution and then use it in case there is any better solution. My first call was to transform the matrix in a list of strings and then simply use String.Contain, i did some research and saw that it works fine for this amount of characters. Also think about BFS. After that i used ChatGPT and it gave me two possible solutions "suffix arrays" and "Trees".
+The trees option wasn't valid because it doesn't work for substrings, and i didn't knowed the suffix array solution so i added it to the project.
 
-https://cc.davelozinski.com/c-sharp/fastest-way-to-check-if-a-string-occurs-within-a-string
+Reference link: https://cc.davelozinski.com/c-sharp/fastest-way-to-check-if-a-string-occurs-within-a-string
+
+#### Performance check
+To check the different solutions i added a library for Benchmark in .NET and asked chatGPT to creat a big wordStream file for testing with 1million words. It created one with a lot of repeated words that would work and i created another with python with 2million strings without repeating.
