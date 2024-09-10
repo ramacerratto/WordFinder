@@ -29,8 +29,22 @@ fashion both in terms of efficient algorithm and utilization of system resources
 please include your analysis and evaluation.
 
 ## Setup
-To compile the solution it is only needed to have the .net 8 sdk and a VisualStudio version updated to compile it.
 To execute the solution, the app is published in the App folder. Just execute "dotnet WordFinderApp.dll" 
+
+### Configuration
+This app is prepared to get the input by console or by file. This configuration can be changed with the WordFinderApp/appsettings.json file:
+
+`{
+  "commandLineRequest": false, 
+  "matrixFilePath": "TestFiles\\matrix64x64.txt",
+  "wordStreamFilePath": "TestFiles\\bigRepeatedWordStream.txt"
+}`
+
+The test files are in \TestFiles.
+
+### Compilation
+To compile the solution it is only needed to have the .net 8 sdk and a VisualStudio version updated to compile it.
+
 
 ## Solution
 
